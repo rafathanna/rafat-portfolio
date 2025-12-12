@@ -1,0 +1,31 @@
+{
+  "files": {
+    "main.css": "/rafathanna/rafat-portfolio.git/static/css/main.2a6f3eb8.css",
+    "main.js": "/rafathanna/rafat-portfolio.git/static/js/main.b75d5a58.js",
+    "static/media/cv.pdf": "/rafathanna/rafat-portfolio.git/static/media/cv.1676dcdc83730930d888.pdf",
+    "static/media/upi-credit-cards-v1.png": "/rafathanna/rafat-portfolio.git/static/media/upi-credit-cards-v1.f35b8430d427cee113c0.png",
+    "static/media/scrnlii.png": "/rafathanna/rafat-portfolio.git/static/media/scrnlii.93c41372861c9043ddd2.png",
+    "static/media/Capture1.PNG": "/rafathanna/rafat-portfolio.git/static/media/Capture1.6339dd27d55cc52003a3.PNG",
+    "static/media/community-blood-services.webp": "/rafathanna/rafat-portfolio.git/static/media/community-blood-services.793d03d08c7467e44a0c.webp",
+    "static/media/rafat.jpeg": "/rafathanna/rafat-portfolio.git/static/media/rafat.4af91b5175e126c05c5e.jpeg",
+    "static/media/portfolio6.jpg": "/rafathanna/rafat-portfolio.git/static/media/portfolio6.72d1107e313049cf15a7.jpg",
+    "static/media/Capture.PNG": "/rafathanna/rafat-portfolio.git/static/media/Capture.8a455f0a0cb06e0c24a3.PNG",
+    "static/media/typescript-svgrepo-com.svg": "/rafathanna/rafat-portfolio.git/static/media/typescript-svgrepo-com.c0eb7115ca99c9b18ba0baf90f610f7d.svg",
+    "static/media/redux-svgrepo-com.svg": "/rafathanna/rafat-portfolio.git/static/media/redux-svgrepo-com.0ee33ee5a7a4df1ce553d08434620317.svg",
+    "static/media/bootstrap-svgrepo-com.svg": "/rafathanna/rafat-portfolio.git/static/media/bootstrap-svgrepo-com.93fe84041cc1b588f15c332248529333.svg",
+    "static/media/react.svg": "/rafathanna/rafat-portfolio.git/static/media/react.773b0515c6eab32646e66c2bbc74f4d3.svg",
+    "static/media/next-js-svgrepo-com.svg": "/rafathanna/rafat-portfolio.git/static/media/next-js-svgrepo-com.9b02d90e63d996118dbd8e7a03b089ad.svg",
+    "static/media/css3.svg": "/rafathanna/rafat-portfolio.git/static/media/css3.f14b087c30d9f8be331a7191cda9463f.svg",
+    "static/media/figma.svg": "/rafathanna/rafat-portfolio.git/static/media/figma.3b61e3aa1eba9db891eccad558020020.svg",
+    "static/media/tailwindcss.svg": "/rafathanna/rafat-portfolio.git/static/media/tailwindcss.6e8e85fcd63cfd3e6ab686ae1ef6f636.svg",
+    "static/media/javascript.svg": "/rafathanna/rafat-portfolio.git/static/media/javascript.1a987ea389c931b550cb2e56429e9190.svg",
+    "index.html": "/rafathanna/rafat-portfolio.git/index.html",
+    "static/media/html-5-svgrepo-com.svg": "/rafathanna/rafat-portfolio.git/static/media/html-5-svgrepo-com.0107c93943a8f415b5db64ebb0a9d12d.svg",
+    "main.2a6f3eb8.css.map": "/rafathanna/rafat-portfolio.git/static/css/main.2a6f3eb8.css.map",
+    "main.b75d5a58.js.map": "/rafathanna/rafat-portfolio.git/static/js/main.b75d5a58.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.2a6f3eb8.css",
+    "static/js/main.b75d5a58.js"
+  ]
+}
