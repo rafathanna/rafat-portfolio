@@ -1,59 +1,69 @@
-.container_skills{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    flex-wrap: wrap;
+.container_skills {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 1.5rem;
 }
 
-.container_skills .card_skill{
-    width: 24%;
-    display: flex;
-    align-items: center;
-    gap: 10px;
-    border: 1px solid var(--color-bg-variant);
-    padding: 10px;
-    border-radius: 12px;
-    margin-bottom: 20px;
-}
-.container_skills .card_skill .icon{
-    width: 65px;
-    height: 65px;
-    padding: 7px;
-    border-radius: 10px;
-    background: var(--color-bg-variant);
-}
-.container_skills .card_skill h4{
-    font-size: 16px;
-}
-.container_skills .card_skill p{
-    font-size: 14px;
+.card_skill {
+  background: var(--glass);
+  border: 1px solid var(--glass-border);
+  backdrop-filter: var(--glass-blur);
+  padding: 1.5rem;
+  border-radius: 1.5rem;
+  display: flex;
+  align-items: center;
+  gap: 1.2rem;
+  transition: var(--transition);
 }
 
+.card_skill:hover {
+  background: var(--glass-border);
+  border-color: var(--color-primary);
+  transform: translateY(-5px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+.card_skill .icon {
+  width: 60px;
+  height: 60px;
+  min-width: 60px;
+  padding: 10px;
+  border-radius: 12px;
+  background: rgba(255, 255, 255, 0.05);
+  display: grid;
+  place-items: center;
+}
+
+.card_skill .icon img {
+  width: 100%;
+  filter: drop-shadow(0 0 5px rgba(255, 255, 255, 0.2));
+}
+
+.card_skill h4 {
+  font-size: 1.1rem;
+  margin-bottom: 0.2rem;
+  color: var(--color-white);
+}
+
+.card_skill p {
+  font-size: 0.85rem;
+  color: var(--color-light);
+}
 
 /* media queries tablet */
-
-@media (max-width : 1024px) {
-    .container_skills .card_skill{
-        width: 48%;
-    }
+@media (max-width: 1024px) {
+  .container_skills {
+    grid-template-columns: repeat(2, 1fr);
+  }
 }
 
-
 /* media queries Mobile */
+@media (max-width: 600px) {
+  .container_skills {
+    grid-template-columns: 1fr;
+  }
 
-@media (max-width : 600px) {
-    .container_skills .card_skill{
-        width: 49%;
-    }
-    .container_skills .card_skill .icon{
-        width: 50px;
-        height: 50px;
-        padding: 5px;
-    }
-    .container_skills .card_skill h4{
-        font-size: 13px;
-    }
-    .container_skills .card_skill p{
-        font-size: 10px;
-    }
+  .card_skill {
+    padding: 1.2rem;
+  }
 }

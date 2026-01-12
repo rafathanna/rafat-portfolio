@@ -4,51 +4,105 @@ import ME from "../../assets/rafat.jpeg";
 import { FaAward } from "react-icons/fa";
 import { FiUsers } from "react-icons/fi";
 import { VscFolderLibrary } from "react-icons/vsc";
+import { motion } from "framer-motion";
+import { useLanguage } from "../../context/LanguageContext";
 
 const About = () => {
+  const { t } = useLanguage();
+
   return (
     <section id="about">
-      <h5>Get To Know</h5>
-      <h2>About Me</h2>
+      <motion.h5
+        initial={{ y: 20, opacity: 0 }}
+        whileInView={{ y: 0, opacity: 1 }}
+        viewport={{ once: true }}
+        transition={{ duration: 0.5 }}
+      >
+        {t.about.subtitle}
+      </motion.h5>
+      <motion.h2
+        initial={{ y: 20, opacity: 0 }}
+        whileInView={{ y: 0, opacity: 1 }}
+        viewport={{ once: true }}
+        transition={{ duration: 0.5, delay: 0.2 }}
+      >
+        {t.about.title}
+      </motion.h2>
 
       <div className="container about_container">
-        <div className="about_me">
+        <motion.div
+          className="about_me"
+          initial={{ x: -50, opacity: 0 }}
+          whileInView={{ x: 0, opacity: 1 }}
+          viewport={{ once: true }}
+          transition={{ duration: 0.8 }}
+        >
           <div className="about_me-image">
             <img src={ME} alt="About Image" />
           </div>
-        </div>
+        </motion.div>
 
         <div className="about_content">
           <div className="about_cards">
-            <article className="about_card">
+            <motion.article
+              className="about_card"
+              initial={{ y: 30, opacity: 0 }}
+              whileInView={{ y: 0, opacity: 1 }}
+              viewport={{ once: true }}
+              transition={{ duration: 0.5, delay: 0.3 }}
+            >
               <FaAward className="about_icon" />
-              <h5>Experience</h5>
-              <small>1+ years working</small>
-            </article>
+              <h5>{t.about.experience}</h5>
+              <small>{t.about.exp_sub}</small>
+            </motion.article>
 
-            <article className="about_card">
+            <motion.article
+              className="about_card"
+              initial={{ y: 30, opacity: 0 }}
+              whileInView={{ y: 0, opacity: 1 }}
+              viewport={{ once: true }}
+              transition={{ duration: 0.5, delay: 0.4 }}
+            >
               <FiUsers className="about_icon" />
-              <h5>Clients</h5>
-              <small>200+ worldwide</small>
-            </article>
+              <h5>{t.about.clients}</h5>
+              <small>{t.about.clients_sub}</small>
+            </motion.article>
 
-            <article className="about_card">
+            <motion.article
+              className="about_card"
+              initial={{ y: 30, opacity: 0 }}
+              whileInView={{ y: 0, opacity: 1 }}
+              viewport={{ once: true }}
+              transition={{ duration: 0.5, delay: 0.5 }}
+            >
               <VscFolderLibrary className="about_icon" />
-              <h5>Projects</h5>
-              <small>80+ Completed</small>
-            </article>
+              <h5>{t.about.projects}</h5>
+              <small>{t.about.projects_sub}</small>
+            </motion.article>
           </div>
 
-          <p className="about-me">
-            I am a Front-End Developer specializing in React.js with experience
-            in Redux Toolkit, TypeScript, and modern web technologies. I build
-            responsive, clean, and modern user interfaces with attention todetail.
-            Always eager to learn new skills, contribute to projects,and grow as a developer.
-          </p>
+          <motion.p
+            className="about-me"
+            initial={{ opacity: 0 }}
+            whileInView={{ opacity: 1 }}
+            viewport={{ once: true }}
+            transition={{ duration: 1, delay: 0.6 }}
+          >
+            {t.about.description}
+          </motion.p>
 
-          <a href="#contact" className="btn btn-primary">
-            Let's Talk
-          </a>
+          <motion.a
+            href="#contact"
+            className="btn btn-primary"
+            initial={{ y: 20, opacity: 0 }}
+            whileInView={{ y: 0, opacity: 1 }}
+            viewport={{ once: true }}
+            transition={{ duration: 0.5, delay: 0.8 }}
+            whileHover={{ scale: 1.05 }}
+            whileTap={{ scale: 0.95 }}
+          >
+            {t.about.cta}
+          </motion.a>
         </div>
       </div>
     </section>

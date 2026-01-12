@@ -1,47 +1,82 @@
-.container_services{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    flex-wrap: wrap;
+.container_services {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2rem;
 }
-.container_services .card{
-    width: 31%;
-    border: 1px solid transparent;
-    padding: 50px 40px;
-    background: var(--color-bg-variant);
-    border-radius: 15px;
-    transition: var(--transition);
+
+.container_services .card {
+  background: var(--glass);
+  border: 1px solid var(--glass-border);
+  backdrop-filter: var(--glass-blur);
+  padding: 3rem 2rem;
+  border-radius: 2rem;
+  text-align: center;
+  transition: var(--transition);
+  perspective: 1000px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
-.container_services .card:hover{
-    border-color: var(--color-primary);
-    background: transparent;
+
+.service_tech {
+  display: flex;
+  gap: 0.5rem;
+  margin-top: 1.5rem;
 }
-.container_services .icon{
-    font-size: 70px;
-    margin-bottom: 20px;
-    color: var(--color-primary);
+
+.service_tech span {
+  background: rgba(255, 255, 255, 0.05);
+  padding: 0.2rem 0.6rem;
+  border-radius: 0.5rem;
+  font-size: 0.8rem;
+  color: var(--color-primary);
+  border: 1px solid var(--glass-border);
 }
-.container_services h3{
-    margin-bottom: 20px;
+
+.container_services .card:hover {
+  background: var(--glass-border);
+  border-color: var(--color-primary);
 }
-.container_services p{
-    font-size: 14px;
+
+.container_services .icon {
+  font-size: 4rem;
+  margin-bottom: 1.5rem;
+  color: var(--color-primary);
+  filter: drop-shadow(0 0 10px var(--color-primary-variant));
+}
+
+.container_services h3 {
+  margin-bottom: 1rem;
+  font-size: 1.5rem;
+  color: var(--color-white);
+}
+
+.container_services p {
+  font-size: 1rem;
+  line-height: 1.6;
+  color: var(--color-light);
 }
 
 /* media queries tablet */
-
-@media (max-width : 1024px) {
-    .container_services .card{
-        width: 48%;
-        margin-bottom: 40px;
-    }
+@media (max-width: 1024px) {
+  .container_services {
+    grid-template-columns: 1fr 1fr;
+    gap: 1.5rem;
+  }
 }
 
-
 /* media queries Mobile */
+@media (max-width: 768px) {
+  .container_services {
+    grid-template-columns: 1fr;
+    gap: 1.2rem;
+  }
 
-@media (max-width : 600px) {
-    .container_services .card{
-        width: 100%;
-    }
+  .container_services .card {
+    padding: 2rem 1.5rem;
+  }
+
+  .container_services h3 {
+    font-size: 1.2rem;
+  }
 }
